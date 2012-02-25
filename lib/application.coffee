@@ -61,7 +61,7 @@ $ ->
   #
   # Maps events and elements to methods
   class App extends Spine.Controller
-    # Call methods (on the right) when HTML/Event (on the left) is triggered
+    # Call methods (on the right) when HTML/Event (on the left) are triggered
     events:
       'keyup input[name=weight]': 'create'
       'click input[name=weight]': 'initInput'
