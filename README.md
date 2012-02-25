@@ -17,6 +17,6 @@ manually compile Coffeescript.
 git clone git@github.com:bseanvt/weightwatchr.git
 cd weightwatchr
 bundle install
-bundle exec guard 
+bundle exec guard # Coffeescript should compile automatically!
 ```
 
