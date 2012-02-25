@@ -1,9 +1,29 @@
 $ ->
-
-  class window.Entry extends Spine.Model
+  # Spine Model
+  #
+  # Models wrap data
+  #
+  # Define attributes
+  # Define methods
+  #
+  # Example
+  #
+  # entry = new Entry
+  # entry.weight = 123
+  # entry.save
+  class Entry extends Spine.Model
+    # Define model attributes here
     @configure 'Entry', 'weight'
+
+    # Set persistence driver
+    # 
+    # E.g LocalStorage, AJAX... etc
     @extend Spine.Model.Local
 
+    # Class methods
+    #
+    # Entry.weights()
+    # Entry.currentWeight()
     @weights: ->
       Entry.all().map (entry)->
         return entry.weight
@@ -11,23 +31,23 @@ $ ->
     @currentWeight: ->
       parseInt(Entry.all()[Entry.all().length-1].weight)
 
-    @targetWeights: ->
-      Entry.all().map (entry)->
-        return (184 - parseInt(entry.weight))
-
-    @ratings: ->
-      Entry.all().map (entry)->
-        return entry.rating
-
+  # Spine Controller
+  #
+  # Map DOM elements and events to methods
+  # Translates model data into visual representation (I.e, HTML Template)
   class Entries extends Spine.Controller
     events:
       "click .delete": "delete"
 
+    # Constructor method
+    # 
+    # new Entries(entry: entry).render().el
     constructor: ->
       super
       @entry.bind('update', @render)
       @entry.bind("destroy", @release)
 
+    # Render a template for model passed into the constructor as @entry
     render: =>
       @replace($("#template").tmpl(@entry))
       @
@@ -35,12 +55,25 @@ $ ->
     delete: ->
       @entry.destroy()
 
+  # Spine Controller
+  #
+  # The "main" part of the application
+  #
+  # Maps events and elements to methods
   class App extends Spine.Controller
+    # Call methods (on the right) when HTML/Event (on the left) is triggered
     events:
       'keyup input[name=weight]': 'create'
       'click input[name=weight]': 'initInput'
       'blur input[name=weight]':  'initInput'
-
+    
+    # Elements hash creates accessors for HTML DOM Elements mapped to a friendly name
+    #
+    # elements:
+    #   ".entries": "my_name_for_entries_element"
+    #
+    # @my_name_for_entries == $(".entries")
+    #
     elements:
       ".entries":           "entries"
       "input[name=weight]": "input"
@@ -83,4 +116,5 @@ $ ->
       @donut.css({width: Entry.currentWeight() - 50})
 
 
+  # Boot it up...
   new App(el: $("#app"))
