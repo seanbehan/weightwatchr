@@ -8,10 +8,10 @@ There is a Spine presentation here http://seanbehan.com/weightwatchr/presentatio
 
 ## Installation
 
-The Spine application code is written in Coffeescript and when saved is compiled (with Guard) to the lib/application.js file.
+The Spine application code is written in Coffeescript in lib/application.coffee. When the file is saved it is compiled (with Guard) to the lib/application.js file.
 
 If you make any changes to lib/application.coffee and want automatic compilation, Ruby and Rubygems are required. Otherwise just 
-manually compile Coffeescript.
+manually compile Coffeescript yourself.
 
 ```bash
 git clone git@github.com:bseanvt/weightwatchr.git
