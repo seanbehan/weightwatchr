@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weight Watchr</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">  
+
+  <script src="lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="lib/jquery.tmpl.js" type="text/javascript" charset="utf-8"></script>
+  <script src="lib/sparklines.js" type="text/javascript" charset="utf-8"></script>
+  <script src="lib/spine.js" type="text/javascript" charset="utf-8"></script>
+  <script src="lib/local.js" type="text/javascript" charset="utf-8"></script>
+  <script src="lib/application.js" type="text/javascript" charset="utf-8"></script>
+
+  <script type="text/x-jquery-tmpl" id="template">
+    <div class="entry">
+        I weighed <span class='weight'>${weight}</span>
+        <span><a href="#" class="delete">x</a></span>
+    </div>
+  </script>
+  
+</head>
+<body>
+  <div id="app">
+    <img src="images/cake.png" id="donut">
+    <h1>Weight Watchr</h1>
+    <table>
+      <tr>
+        <td>Current</td>
+        <td><span id="currentWeight">0</span> lbs</td>
+        <td><span class="sparklines">Loading...</span></td>
+      </tr>
+    </table>
+
+    <input name='weight' type="text" value="Enter weight:">
+
+    <div class="entries"></div>
+  </div>
+
+  <footer> Developed by <a href="http://seanbehan.com">Sean Behan</a> </footer>
+
+</body>
+</html>

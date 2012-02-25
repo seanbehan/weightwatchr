@@ -1,0 +1,398 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+h2 {
+  page-break-before: always;  
+  page-break-before: always;  
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    margin: 10px 13px 10px 13px;
+}
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+@media screen and (min-width: 768px) {
+    body {
+        width: 748px;
+        margin:10px auto;
+    }
+}
+</style>
+<title>SpinejsPresentation.html</title>
+</head>
+<body>
+<h2>JavascriptMVC</h2>
+
+<p>Ideas and best practices from server side frameworks (Rails, Django, Zend…) are on the move to  client side programming.</p>
+
+<h2>Spine.js</h2>
+
+<p>Is a JavaScript MVC among many.</p>
+
+<p>A lot of great alternatives out there.</p>
+
+<p>I think it&rsquo;s less about which framework you choose and more what you learn from the MVC approach.</p>
+
+<h2>Why JavaScript MVC?</h2>
+
+<p>Programming should be fun. What isn&rsquo;t fun?</p>
+
+<pre><code>Complicated Code
+Unorganized Code
+Breaking Things
+Not understanding things
+</code></pre>
+
+<h2>Make Client Side Programming Fun Again</h2>
+
+<pre><code>Structured
+Organized
+Maintainable
+Tested
+Challenging - learn something new
+Applied design patterns for well architected applications
+</code></pre>
+
+<h2>JavaScript is a First Class Citizen!</h2>
+
+<pre><code>Applications are pushing functionality to the client
+responsive, rich and asynchronous
+
+It is the most ubiquitous programming language around (you should learn it)
+
+Enjoy all the benefits of shared framework and environment (Think server side… Rails,     Django… etc)
+</code></pre>
+
+<h2>Don&rsquo;t Cook Spaghetti Code</h2>
+
+<p>…or deal with crazy assets!</p>
+
+<h2>Why Spine.js in Particular?</h2>
+
+<pre><code>500 readable LOC ~ 2K minified
+No dependencies (but you'll probably want to use jQuery/Zepto…)
+Has some nice conventions (elements, events)
+Written in CoffeeScript
+By Alex MacCaw O'Reilly Author
+Great Documentation and Many Sample Applications
+Spine Mobile
+Code generators
+Inspired by and borrows great ideas from other frameworks
+</code></pre>
+
+<h2>Getting Started</h2>
+
+<p>You can use as much or as little MVC as you want.</p>
+
+<p>Your whole application doesn&rsquo;t have to be MVC.</p>
+
+<pre><code>Experiment writing your own "single page apps" Todo, Contacts, etc… 
+
+Identify "single page apps" even within your application where there is complex     interaction
+</code></pre>
+
+<h2>Warning: It is complicated!</h2>
+
+<p>A different way of thinking about the client side programming.</p>
+
+<p>Some traditional MVC concepts don&rsquo;t apply so cleanly.</p>
+
+<p>Start simple and get more advanced over time.</p>
+
+<p>It is a lot of code at first. But just like Rails, Django and others, the value is earned over time.</p>
+
+<h2>Some Core Concepts</h2>
+
+<h2>MVC</h2>
+
+<p>Model View Controller is a tried and true design pattern for separating application code into logical concerns.</p>
+
+<h2>Your Models</h2>
+
+<p>Deal with application data, relationships/structures and persistence.</p>
+
+<p>AJAX</p>
+
+<p>HTML5 LocalStorage</p>
+
+<h2>Your Views</h2>
+
+<p>Often are the visual representation of your models.</p>
+
+<p>Templates and helpers for rendering complex structures.</p>
+
+<p>Logic less templates such as Mustache, Handlebars, Eco, jQuery.tmpl… the list goes on.</p>
+
+<h2>Your Controllers</h2>
+
+<p>Are responsible for orchestrating and handling events, rending models… and much much more.</p>
+
+<h2>On to the Code…</h2>
+
+<p>Keep it simple.</p>
+
+<h2>Sample Application: Weight Watchr</h2>
+
+<p>Log and chart weight over time</p>
+
+<p><em>Save Weight as number</em></p>
+
+<p><em>Plot that number as it changes</em></p>
+
+<p><em>Delete entries</em></p>
+
+<h2>Step 1 ) Project Directory Structure and Dependencies</h2>
+
+<pre><code>index.html
+lib/spine.js
+lib/local.spine.js
+lib/jquery.js
+lib/application.coffee -&gt; lib/application.js (dynamically compiled)
+</code></pre>
+
+<h2>Step 2 ) What Templates Look Like (jQuery.tmpl)</h2>
+
+<pre><code>&lt;script type="text/x-jquery-tmpl" id="template"&gt;
+    &lt;div class="entry"&gt;
+        I weighed &lt;span class='weight'&gt;${weight}&lt;/span&gt;
+        &lt;span&gt;&lt;a href="#" class="delete"&gt;x&lt;/a&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/script&gt;
+</code></pre>
+
+<h2>Step 3 ) Your index.html (Excluding Stylesheets)</h2>
+
+<pre><code>&lt;body&gt;
+    &lt;head&gt;
+    &lt;!-- My Dependencies --&gt;
+    &lt;script src="lib/jquery.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
+    &lt;script src="lib/jquery.tmpl.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
+    &lt;script src="lib/spine.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
+    &lt;!-- LocalStorage Adapter --&gt;
+    &lt;script src="lib/local.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
+    &lt;!-- My Spine Code --&gt;
+    &lt;script src="lib/application.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
+
+    &lt;!-- My Template --&gt;
+    &lt;script type="text/x-jquery-tmpl" id="template"&gt;
+        &lt;div class="entry"&gt;
+            I weighed &lt;span class='weight'&gt;${weight}&lt;/span&gt;
+            &lt;span&gt;&lt;a href="#" class="delete"&gt;x&lt;/a&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/script&gt;
+
+    &lt;/head&gt;
+
+    &lt;h1&gt;Weight Watchr&lt;/h1&gt;
+
+    &lt;!-- Spine App Controller Element #app --&gt;
+    &lt;div id="app"&gt;
+        &lt;input name='weight' type="text" value="Enter weight:"&gt;
+
+        &lt;!-- Spine Entries Go Here .entries --&gt;
+        &lt;div class="entries"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+</code></pre>
+
+<h2>Give Me Some Coffee!</h2>
+
+<h2>The App Controller</h2>
+
+<p>The entry point for our single page app (Some code Omitted)</p>
+
+<h2>Events Tied to DOM Elements and Have a Friendly Name</h2>
+
+<p>events { &lsquo;event element&rsquo;: &lsquo;callbackName&rsquo; }</p>
+
+<h2>DOM Elements Accessors</h2>
+
+<p>elements: { &lsquo;#element.selector&rsquo;: &lsquo;friendlyName&rsquo; } => @friendlyName</p>
+
+<h2>App Controller Code</h2>
+
+<pre><code>class App extends Spine.Controller
+    events:
+      'keyup input[name=weight]': 'create'
+      'click input[name=weight]': 'initInput'
+
+    elements:
+      ".entries":           "entries"
+      "input[name=weight]": "input"
+      "#donut":             "donut" 
+
+    constructor: -&gt;
+      super
+      Entry.bind("refresh change", @updateCurrentWeight)
+      Entry.fetch()
+
+    create: (event)-&gt;
+      event.preventDefault()
+      if event.keyCode == 13
+        new Entry(weight: @input.val()).save()
+        @input.val('')
+
+    updateCurrentWeight: =&gt;
+      @currentWeight.html(Entry.currentWeight())
+      @donut.css({width: Entry.currentWeight() - 50})
+
+new App(el: $("#app"))
+</code></pre>
+
+<h2>The Entries Controller</h2>
+
+<p>Responsible for rendering individual elements</p>
+
+<pre><code>class Entries extends Spine.Controller
+    events:
+      "click .delete": "delete"
+
+    constructor: -&gt;
+      super
+      @entry.bind('update', @render)
+      @entry.bind("destroy", @release)
+
+    render: =&gt;
+      @replace($("#template").tmpl(@entry))
+      @
+
+    delete: -&gt;
+      @entry.destroy()
+</code></pre>
+
+<h2>Our Model</h2>
+
+<p>Extends Spine.Model</p>
+
+<p>Declare attributes using @configure(&ldquo;ModelName&rdquo;, &ldquo;attr_1&rdquo;, &ldquo;attr_2&rdquo;, …)</p>
+
+<p>Add methods with @methodName: (anyArgs…)&ndash;></p>
+
+<pre><code>  class window.Entry extends Spine.Model
+    @configure 'Entry', 'weight' 
+    @extend Spine.Model.Local # Use local Storage
+
+    @weights: -&gt;
+      Entry.all().map (entry)-&gt;
+        return entry.weight
+</code></pre>
+
+<h2>Boot It Up</h2>
+
+<pre><code>$ -&gt;
+  new App(el: $("#app"))        
+</code></pre>
+
+<h2>Visit The App…</h2>
+
+<p><a href="http://seanbehan.com/weightwatchr/">http://seanbehan.com/weightwatchr</a></p>
+</body>
+</html>

@@ -1,0 +1,65 @@
+    body {
+/*      background:url(http://subtlepatterns.com/patterns/subtle_zebra_3d.png);
+      background:url(http://subtlepatterns.com/patterns/dark_geometric.png);
+      background:url(http://subtlepatterns.com/patterns/hixs_pattern_evolution.png);
+*/
+      font-family: 'Orbitron', 'arial', sans-serif;
+      text-align:center;
+      background:#F7F7F7;
+    }
+    a {
+      color:maroon;
+    }
+    #app {
+
+      width:300px;
+      margin:30px auto;
+      padding:0px;
+      background-color: rgba(255,255,255,.71);
+      box-shadow:3px 3px 5px #999;
+    }
+/*    #donut {
+      position:absolute;
+      left:-65px;
+      top:0px;
+    }*/
+    footer {
+      width:700px;
+      margin:40px auto;
+      padding:25px;
+      font-size:13px;
+    }
+
+    #currentWeight {
+      font-size:2.2em;
+    }
+    table {
+      width:100%;
+    }
+    td {
+      text-align:center;
+      width:33%;
+    }
+    input{
+      width:288px;
+      border:solid 1px #DDD;
+      padding:5px;
+      margin:10px 0px 0px;
+      border:none;
+      border-top:solid 1px #DDD;
+      border-bottom:solid 1px #DDD;
+      text-align:center;
+      outline:none;
+      color:#999;
+    }
+    .entry {
+      padding:10px;
+      border-bottom:solid 1px #FFF;
+      border-top:solid 1px #EEE;
+    }
+    .entry:first-child {
+      border:none;
+    }
+    .entry:nth-child(odd) {
+      background:#FFF;
+    }
