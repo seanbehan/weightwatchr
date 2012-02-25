@@ -20,3 +20,4 @@ bundle install
 bundle exec guard # Coffeescript should compile automatically!
 ```
 
+This is just a regular HTML/Javascript application so it should run in any browser without the need for a server. Just open the index.html file and everything is good to go!
